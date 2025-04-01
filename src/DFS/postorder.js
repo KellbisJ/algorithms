@@ -11,7 +11,7 @@ import { root } from './index.js';
 		console.log(`Postorder: ${branch.value}`);
 	};
 
-	const postDFSResult = postOrderDFS(root, 6);
+	const postDFSResult = postOrderDFS(root);
 
 	console.log(postDFSResult);
 })();

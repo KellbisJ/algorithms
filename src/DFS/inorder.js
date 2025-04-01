@@ -11,7 +11,7 @@ import { root } from './index.js';
 		inorderDFS(branch.right);
 	};
 
-	const inorderDFSResult = inorderDFS(root, 6);
+	const inorderDFSResult = inorderDFS(root);
 
 	console.log(inorderDFSResult);
 })();
