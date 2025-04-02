@@ -1,4 +1,8 @@
 (1) Sum Root to Leaf Numbers:
 - Given a binary tree where each node contains a single digit (0-9), calculate the sum of all numbers formed by traversing from the root to each leaf node.
 - Each root-to-leaf path in the tree represents a number. Combine the digits along the path to form that number.
-(2) 
+
+(2) Number of Islands:
+- Given a 2D grid map consisting of '1's (land) and '0's (water), count the total number of distinct islands.
+- An island is defined as a group of connected '1's that are surrounded by water. Connection can only happen horizontally or vertically; diagonal connections are not considered.
+- The goal is to determine how many separate islands exist in the grid.
