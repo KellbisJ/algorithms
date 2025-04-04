@@ -7,10 +7,11 @@
 - An island is defined as a group of connected '1's that are surrounded by water. Connection can only happen horizontally or vertically; diagonal connections are not considered.
 - The goal is to determine how many separate islands exist in the grid.
 
-(3) Flood Fill Algorithm: An image is represented by an m x n integer grid where `image[i][j]`  represents the pixel value of the image.
-You are also given three integers: `sr`, `sc`, and `color`. You must perform a flood fill operation starting at the pixel `image[sr][sc]`.
-To perform the fill, consider the starting pixel along with any pixel connected in four directions (up, down, left, right) that share the same color as the starting pixel. Continue this process for all connected pixels and replace their color with `color`.
-Return the modified image after the flood fill operation.
+(3) Flood Fill Algorithm: 
+- An image is represented by an m x n integer grid where `image[i][j]`  represents the pixel value of the image.
+- You are also given three integers: `sr`, `sc`, and `color`. You must perform a flood fill operation starting at the pixel `image[sr][sc]`.
+- To perform the fill, consider the starting pixel along with any pixel connected in four directions (up, down, left, right) that share the same color as   the starting pixel. Continue this process for all connected pixels and replace their color with `color`.
+- Return the modified image after the flood fill operation.
 Example 1:
 
 Input:
@@ -34,3 +35,6 @@ Output:
 
 Explanation:
 The starting pixel already has the color `0`, so no changes are made to the image.
+
+(4) Minimum Knight Moves: 
+- Given a chess knight on an infinite chessboard, find the minimum number of moves needed to reach a target position (x, y) starting from (0, 0). The knight moves in an "L-shape" (2 squares in one direction and then 1 square perpendicular).
