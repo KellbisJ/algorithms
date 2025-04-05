@@ -38,3 +38,14 @@ The starting pixel already has the color `0`, so no changes are made to the imag
 
 (4) Minimum Knight Moves: 
 - Given a chess knight on an infinite chessboard, find the minimum number of moves needed to reach a target position (x, y) starting from (0, 0). The knight moves in an "L-shape" (2 squares in one direction and then 1 square perpendicular).
+
+(5) Rotting Oranges:
+-You are given an m x n grid where each cell can have one of three values:
+
+0 = Empty cell
+
+1 = Fresh orange
+
+2 = Rotten orange
+
+- Every minute, any fresh orange (1) that is 4-directionally adjacent (up, down, left, right) to a rotten orange (2) becomes rotten. Return the minimum number of minutes that must elapse until no fresh oranges remain. If it's impossible, return -1.
