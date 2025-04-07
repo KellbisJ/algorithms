@@ -99,3 +99,27 @@ The first time a BFS step finds an unmarked , that  count equals the minimum num
 - A digit string of length 0 returns an empty array.
 - The order of the output does not matter (e.g., ["ad","ae"] is equivalent to ["ae","ad"]).
 
+(8) Problem Statement: Restore IP Addresses:
+ - Given a string s containing only digits, return all possible valid IP addresses that can be formed by inserting dots into s. A valid IP address consists of exactly four integers separated by dots, where each integer is between 0 and 255 (inclusive), and:
+
+ - No integer has leading zeros (e.g., "0" is allowed, but "01" or "012" is invalid).
+
+ - The integers must form the exact original string when concatenated.
+
+ - Return the combinations in any order.
+
+ * Examples:
+ - Input: s = "25525511135"
+ - Output: ["255.255.111.35", "255.255.11.135"]
+ - Input: s = "0000"
+ - Output: ["0.0.0.0"]
+ - Input: s = "101023"
+ - Output: ["1.0.10.23", "1.0.102.3", "10.1.0.23", "10.10.2.3", "101.0.2.3"]
+
+ * Notes:
+
+ - 1 <= s.length <= 20
+
+ - s consists of digits only.
+
+ - The order of the output does not matter.
