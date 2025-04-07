@@ -49,3 +49,24 @@ The starting pixel already has the color `0`, so no changes are made to the imag
 2 = Rotten orange
 
 - Every minute, any fresh orange (1) that is 4-directionally adjacent (up, down, left, right) to a rotten orange (2) becomes rotten. Return the minimum number of minutes that must elapse until no fresh oranges remain. If it's impossible, return -1.
+
+(6) Shortest Bridge Between Islands:
+- Identify the First Island: Scan the grid until you find a cell with value . Use DFS to traverse all connected s, marking them as . This distinguishes the first island from the second.
+
+* Example after DFS:
+[2, 2, 0, 0, 0],
+[2, 0, 0, 0, 0],
+[0, 0, 0, 0, 1],
+[0, 0, 0, 1, 1]
+
+- Expand from the First Island:
+Use BFS starting from the marked island's border. Each BFS level represents one water cell being flipped (i.e., a step).
+
+- BFS Process: For every cell in the queue, check the 4 neighbors (up, down, left, right):
+
+* If a neighbor is 1 (and unmarked), that neighbor belongs to the second island. Return the current number of steps as the answer.
+
+* If a neighbor is water (0), mark it (e.g., set to -1) and add it to the queue.
+
+- Termination:
+The first time a BFS step finds an unmarked , that  count equals the minimum number of flips required. In our provided grid, this value is 4.
