@@ -70,3 +70,32 @@ Use BFS starting from the marked island's border. Each BFS level represents one 
 
 - Termination:
 The first time a BFS step finds an unmarked , that  count equals the minimum number of flips required. In our provided grid, this value is 4.
+
+(7) Letter Combinations of a Phone Number:
+- Given a string containing digits from 2 to 9 inclusive, return all possible letter combinations that the number could represent. The mapping of digits to letters is based on a traditional telephone keypad, as follows:
+  [
+    2: "abc"
+    3: "def"
+    4: "ghi"
+    5: "jkl"
+    6: "mno"
+    7: "pqrs"
+    8: "tuv"
+    9: "wxyz"
+  ]
+- Return the combinations in any order.
+
+* Examples:
+- Input: digits = "23"
+- Output: ["ad","ae","af","bd","be","bf","cd","ce","cf"]
+
+- Input: digits = ""
+- Output: []
+
+- Input: digits = "2"
+- Output: ["a","b","c"]
+
+* Notes:
+- A digit string of length 0 returns an empty array.
+- The order of the output does not matter (e.g., ["ad","ae"] is equivalent to ["ae","ad"]).
+
