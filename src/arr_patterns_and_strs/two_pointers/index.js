@@ -55,4 +55,21 @@
 	}
 
 	console.log(isPalindrome('A man, a plan, a canal: Panama')); // Output: true
+
+	// Reverse String
+
+	function reverseString(s) {
+		let left = 0,
+			right = s.length - 1;
+		while (left < right) {
+			[s[left], s[right]] = [s[right], s[left]]; // Swap characters
+			left++;
+			right--;
+		}
+		return s;
+	}
+
+	const chars = ['h', 'e', 'l', 'l', 'o'];
+	reverseString(chars);
+	console.log(chars); // Output: ["o", "l", "l", "e", "h"]
 })();
